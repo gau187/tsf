@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/profleImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="imageUpdate"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"/>
+
+    <Button
+        android:id="@+id/personal"
+        android:layout_width="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profleImage"
+        android:layout_marginTop="30dp"
+        android:text="Personal Details"
+        android:background="#139ED1"
+        android:textColor="#ffffff"
+        android:padding="5dp"
+        />
+
+    <Button
+        android:id="@+id/educational"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="#139ED1"
+        android:textColor="#ffffff"
+        android:layout_below="@id/personal"
+        android:layout_marginTop="30dp"
+        android:text="Educational Details" />
+
+    <Button
+        android:id="@+id/professional"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="#139ED1"
+        android:textColor="#ffffff"
+        android:layout_below="@id/educational"
+        android:layout_marginTop="30dp"
+        android:text="Professional Details" />
+</RelativeLayout>

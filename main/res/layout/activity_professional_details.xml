@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfessionalDetails">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:textSize="18sp"
+            android:text="Organisation Name" />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:background="#D6D6DA"
+            android:padding="4dp"
+            android:layout_marginStart="15dp"
+            android:hint="No Data"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameTextView"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:textSize="18sp"
+            android:text="Designation: " />
+
+        <TextView
+            android:id="@+id/designationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="No Data"
+            android:layout_below="@+id/textView2"
+            android:background="#D6D6DA"
+            android:padding="4dp"
+            
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/designationTextView"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:textSize="18sp"
+            android:text="Start Year:(DD-MM-YYYY)" />
+
+        <TextView
+            android:id="@+id/startTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:background="#D6D6DA"
+            android:padding="4dp"
+            android:hint="No Data"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/startTextView"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:textSize="18sp"
+            android:text="End Year: (DD-MM-YYYY)" />
+
+        <TextView
+            android:id="@+id/endTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:background="#D6D6DA"
+            android:padding="4dp"
+            android:hint="No Data"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp" />
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/endTextView"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="#139ED1"
+            android:textColor="#ffffff"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="updateData"
+            android:padding="8dp"
+            android:text="Update Profile" />
+
+    </RelativeLayout>
+
+</ScrollView>

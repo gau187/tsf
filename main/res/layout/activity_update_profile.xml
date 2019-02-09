@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateProfileActivity">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:textSize="18sp"
+        android:text="Name: " />
+
+    <EditText
+        android:id="@+id/nameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:background="#D6D6DA"
+        android:padding="4dp"
+        android:inputType="textPersonName"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameTextView"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:textSize="18sp"
+        android:text="Location" />
+
+    <EditText
+        android:id="@+id/locationTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:background="#D6D6DA"
+        android:padding="4dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="textPersonName"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/locationTextView"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:textSize="18sp"
+        android:text="Number: " />
+
+    <EditText
+        android:id="@+id/numberTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:background="#D6D6DA"
+        android:padding="4dp"
+        android:layout_marginStart="15dp"
+        android:inputType="number"
+        android:maxLength="10"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numberTextView"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:textSize="18sp"
+        android:text="Skills: " />
+
+    <EditText
+        android:id="@+id/skillTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:background="#D6D6DA"
+        android:inputType="text"
+        android:padding="4dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/skillTextView"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:textSize="18sp"
+        android:text="Links: " />
+
+    <EditText
+        android:id="@+id/linkTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:background="#D6D6DA"
+        android:padding="4dp"
+        android:inputType="textUri"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/updateData"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/linkTextView"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#139ED1"
+        android:textColor="#ffffff"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="updateProfile"
+        android:padding="8dp"
+        android:text="Update" />
+
+    </RelativeLayout>
+
+</ScrollView>
