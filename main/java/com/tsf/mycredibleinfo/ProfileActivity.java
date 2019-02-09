@@ -2,6 +2,7 @@ package com.tsf.mycredibleinfo;
 
 import android.Manifest;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -15,6 +16,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Base64;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -184,5 +188,22 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         String encodedImage = Base64.encodeToString(imageBytes, Base64.DEFAULT);
         return encodedImage;
 
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId() == R.id.logout){
+            this.getSharedPreferences("com.tsf.mycredibleinfo",Context.MODE_PRIVATE).edit().putBoolean("loggedIn",false).apply();
+            Intent intent = new Intent(ProfileActivity.this,MainActivity.class);
+            startActivity(intent);
+            finish();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = new MenuInflater(getApplicationContext());
+        menuInflater.inflate(R.menu.menuprofile,menu);
+        return super.onCreateOptionsMenu(menu);
     }
 }
